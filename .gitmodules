@@ -4,3 +4,12 @@
 [submodule "zazl/dependencies"]
 	path = zazl/dependencies
 	url = git@github.com:zazl/optimizer-dependencies.git
+[submodule "org.dojotoolkit.dojo/dojo"]
+	path = org.dojotoolkit.dojo/dojo
+	url = git://github.com/dojo/dojo.git
+[submodule "org.dojotoolkit.dojo/dijit"]
+	path = org.dojotoolkit.dojo/dijit
+	url = git://github.com/dojo/dijit.git
+[submodule "org.dojotoolkit.dojo/dojox"]
+	path = org.dojotoolkit.dojo/dojox
+	url = git://github.com/dojo/dojox.git
