@@ -1,7 +1,14 @@
 package org.zazl.optimizer.sample;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.List;
+
 import org.dojotoolkit.compressor.JSCompressorFactory;
 import org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressorFactory;
+import org.dojotoolkit.json.JSONParser;
 import org.dojotoolkit.optimizer.JSOptimizerFactory;
 import org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizerFactory;
 import org.dojotoolkit.optimizer.servlet.JSServlet;
@@ -33,13 +40,19 @@ public class Activator implements BundleActivator {
 	
 	protected boolean register() {
 		if (!registered && httpService != null) {
-			String[] bundleIds = {
-				"org.json.js", 
-				"org.dojotoolkit.server.util.js",
-				"org.dojotoolkit.optimizer.amd",
-				"org.dojotoolkit.optimizer.servlet",
-				"org.dojotoolkit.dojo"
-			};
+			InputStream is = null;
+			List<String> bundleIdList = null;
+			try {
+				is = context.getBundle().getResource("bundleids.json").openStream();
+				Reader reader = new InputStreamReader(is);
+				bundleIdList = (List<String>)JSONParser.parse(reader);
+			} catch (Throwable e) {
+				e.printStackTrace();
+			} finally {
+				if (is != null){ try { is.close(); } catch (IOException e) {}}
+			}
+			String[] bundleIds = new String[bundleIdList.size()];
+			bundleIds = bundleIdList.toArray(bundleIds);
 			ResourceLoader resourceLoader = new OSGiResourceLoader(context, bundleIds);
 			RhinoClassLoader rhinoClassLoader = new RhinoClassLoader(resourceLoader);
 			JSCompressorFactory jsCompressorFactory = null;
