@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.pde.ui.EquinoxLauncher">
 <setAttribute key="additional_plugins">
+<setEntry value="org.dojotoolkit.dojo:1.8.2:default:true"/>
 <setEntry value="org.eclipse.equinox.console:1.0.0.v20120522-1841:default:false"/>
 <setEntry value="org.eclipse.equinox.http.jetty:3.0.0.v20120522-1841:default:true"/>
 <setEntry value="org.eclipse.equinox.http.registry:1.1.200.v20120522-2049:default:true"/>
