@@ -1,0 +1,6 @@
+[
+	"org.jquery",
+	"org.backbonejs",
+	"org.underscorejs",
+	"org.requirejs"
+]

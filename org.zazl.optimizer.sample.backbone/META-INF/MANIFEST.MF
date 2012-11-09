@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Backbone
+Bundle-SymbolicName: org.zazl.optimizer.sample.backbone
+Bundle-Version: 1.0.0.qualifier
