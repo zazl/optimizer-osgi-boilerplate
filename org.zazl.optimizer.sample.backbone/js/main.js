@@ -3,8 +3,10 @@ var zazlConfig = {
 	directInject: true,
 	paths: {
 		jquery: '../lib/jquery/jquery-1.8.2',
-		underscore: '../lib/underscore/underscore', // https://github.com/amdjs
-		backbone: '../lib/backbone/backbone', // https://github.com/amdjs
+		//jquery: '../lib/jquery/jquery-1.8.2.min',
+		underscore: '../lib/underscore/underscore',
+		backbone: '../lib/backbone/backbone',
+		//backbone: '../lib/backbone/backbone-min',
 		text: '../lib/requirejs/text',
 		templates: '../templates'
 	}
