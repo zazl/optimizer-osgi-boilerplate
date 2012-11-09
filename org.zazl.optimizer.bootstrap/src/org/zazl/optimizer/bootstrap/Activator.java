@@ -1,9 +1,11 @@
-package org.zazl.optimizer.sample;
+package org.zazl.optimizer.bootstrap;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.dojotoolkit.compressor.JSCompressorFactory;
@@ -15,6 +17,7 @@ import org.dojotoolkit.optimizer.servlet.JSServlet;
 import org.dojotoolkit.server.util.osgi.OSGiResourceLoader;
 import org.dojotoolkit.server.util.resource.ResourceLoader;
 import org.dojotoolkit.server.util.rhino.RhinoClassLoader;
+import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -22,6 +25,12 @@ import org.osgi.service.http.HttpService;
 import org.osgi.util.tracker.ServiceTracker;
 
 public class Activator implements BundleActivator {
+	private static final String[] defaultBundleIds = {
+	  	"org.json.js", 
+		"org.dojotoolkit.server.util.js",
+		"org.dojotoolkit.optimizer.amd",
+		"org.dojotoolkit.optimizer.servlet"
+	};
 	private BundleContext context;
 	private ServiceTracker httpServiceTracker = null;
 	private HttpService httpService = null;
@@ -41,11 +50,20 @@ public class Activator implements BundleActivator {
 	protected boolean register() {
 		if (!registered && httpService != null) {
 			InputStream is = null;
-			List<String> bundleIdList = null;
+			List<String> bundleIdList = new ArrayList<String>(Arrays.asList(defaultBundleIds));
+			Bundle b = null;
+			String bundleId = System.getProperty("zazl.idsprovider");
+			if (bundleId != null) {
+				bundleIdList.add(bundleId);
+				b = findBundle(bundleId);
+			}
+			if (b == null) {
+				b = context.getBundle();
+			}
 			try {
-				is = context.getBundle().getResource("bundleids.json").openStream();
+				is = b.getResource("bundleids.json").openStream();
 				Reader reader = new InputStreamReader(is);
-				bundleIdList = (List<String>)JSONParser.parse(reader);
+				bundleIdList.addAll((List<String>)JSONParser.parse(reader));
 			} catch (Throwable e) {
 				e.printStackTrace();
 			} finally {
@@ -75,6 +93,16 @@ public class Activator implements BundleActivator {
 			}
 		}
 		return registered;
+	}
+	
+	private Bundle findBundle(String id) {
+		Bundle[] bundles = context.getBundles();
+		for (Bundle b : bundles) {
+			if (b.getSymbolicName().equals(id)) {
+				return b;
+			}
+		}
+		return null;
 	}
 	
 	private class HttpServiceTracker extends ServiceTracker {

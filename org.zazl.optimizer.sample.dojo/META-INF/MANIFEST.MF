@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Zazl Dojo Sample
+Bundle-SymbolicName: org.zazl.optimizer.sample.dojo
+Bundle-Version: 1.0.0

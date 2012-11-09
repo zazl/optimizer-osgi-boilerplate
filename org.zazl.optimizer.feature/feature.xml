@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.zazl.optimizer.sample.feature"
+      id="org.zazl.optimizer.feature"
       label="Feature"
       version="1.0.0.qualifier">
 
@@ -99,13 +99,6 @@
 
    <plugin
          id="org.json.js"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.zazl.optimizer.sample"
          download-size="0"
          install-size="0"
          version="0.0.0"

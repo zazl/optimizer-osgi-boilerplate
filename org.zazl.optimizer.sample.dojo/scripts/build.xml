@@ -46,8 +46,8 @@
 			<zipfileset dir="${workspace.dir}/zazl/optimizer/org.dojotoolkit.optimizer.amd/loader/amd" prefix="loader/amd">
 				<include name="zazl.js"/>
 			</zipfileset>	
-			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample/amdtest" prefix="amdtest"/>
-			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample">
+			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample.dojo/amdtest" prefix="amdtest"/>
+			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample.dojo">
 				<include name="*.html"/>
 			</fileset>
 		</war>

@@ -2,7 +2,7 @@
     <!-- Properties -->
 	<property
 		name="features"
-		value="org.zazl.optimizer.sample.feature"/>
+		value="org.zazl.optimizer.feature"/>
 
 	<property
 		name="target.dir"

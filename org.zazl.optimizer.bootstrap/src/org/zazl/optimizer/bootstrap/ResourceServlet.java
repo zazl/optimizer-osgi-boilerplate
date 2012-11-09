@@ -1,4 +1,4 @@
-package org.zazl.optimizer.sample;
+package org.zazl.optimizer.bootstrap;
 
 import java.io.IOException;
 import java.io.InputStream;
