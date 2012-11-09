@@ -1,0 +1,61 @@
+<project name="assemble" basedir=".." default="assemble">
+	<property
+		name="target.dir"
+		value="${basedir}/build"/>
+	<property
+		name="workspace.dir"
+		value="${basedir}/.."/>
+	<property
+		name="dojo.dir"
+		value="${workspace.dir}/org.dojotoolkit.dojo"/>
+	
+	<target name="assemble">
+		<mkdir dir="${target.dir}/package"/>
+		<propertyfile file="${target.dir}/package/org_dojotoolkit_optimizer.properties">
+		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizer"/>
+		</propertyfile>		
+		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
+		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressor"/>
+		  <entry  key="ignoreList" value="/dojo/dojo.js,.*/nls/.*"/>
+		</propertyfile>		
+		<war destfile="${target.dir}/package/sample.war" webxml="${basedir}/web.xml">
+			<zipfileset dir="${dojo.dir}/dojo" prefix="dojo"/>
+			<zipfileset dir="${dojo.dir}/dijit" prefix="dijit"/>
+			<!--
+			<zipfileset dir="${dojo.dir}/dojox" prefix="dojox"/>
+			-->
+			<zipfileset dir="${target.dir}/package" prefix="WEB-INF/classes">
+				<include name="org_dojotoolkit_optimizer.properties"/> 
+				<include name="org_dojotoolkit_compressor.properties"/> 
+			</zipfileset>
+			<zipfileset dir="${workspace.dir}/zazl/optimizer/org.dojotoolkit.optimizer.servlet" prefix="WEB-INF/classes">
+				<include name="zazl.json"/> 
+			</zipfileset>
+			<zipfileset dir="${target.dir}/plugins" prefix="WEB-INF/lib">
+				<include name="*.jar"/> 
+			</zipfileset>	
+			<zipfileset dir="${target.dir}/plugins/org.cyberneko.html_1.9.15" prefix="WEB-INF/lib">
+				<include name="*.jar"/> 
+			</zipfileset>	
+			<zipfileset dir="${target.dir}/plugins/org.dojotoolkit.shrinksafe_1.0.1" prefix="WEB-INF/lib">
+				<include name="*.jar"/> 
+			</zipfileset>	
+			<zipfileset dir="${target.dir}/plugins/org.mozilla.javascript_1.7.3" prefix="WEB-INF/lib">
+				<include name="*.jar"/> 
+			</zipfileset>	
+			<zipfileset dir="${workspace.dir}/zazl/optimizer/org.dojotoolkit.optimizer.amd/loader/amd" prefix="loader/amd">
+				<include name="zazl.js"/>
+			</zipfileset>	
+			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample/amdtest" prefix="amdtest"/>
+			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample">
+				<include name="*.html"/>
+			</fileset>
+		</war>
+	</target>
+	
+	<target name="clean">
+		<delete	dir="${target.dir}"/>
+		<mkdir dir="${target.dir}"/>
+	</target>
+</project>
+	
