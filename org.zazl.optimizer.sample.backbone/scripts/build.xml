@@ -5,9 +5,6 @@
 	<property
 		name="workspace.dir"
 		value="${basedir}/.."/>
-	<property
-		name="dojo.dir"
-		value="${workspace.dir}/org.dojotoolkit.dojo"/>
 	
 	<target name="assemble">
 		<mkdir dir="${target.dir}/package"/>
@@ -16,14 +13,20 @@
 		</propertyfile>		
 		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
 		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressor"/>
-		  <entry  key="ignoreList" value="/dojo/dojo.js,.*/nls/.*"/>
 		</propertyfile>		
-		<war destfile="${target.dir}/package/dojosample.war" webxml="${basedir}/web.xml">
-			<zipfileset dir="${dojo.dir}/dojo" prefix="dojo"/>
-			<zipfileset dir="${dojo.dir}/dijit" prefix="dijit"/>
-			<!--
-			<zipfileset dir="${dojo.dir}/dojox" prefix="dojox"/>
-			-->
+		<war destfile="${target.dir}/package/bbsample.war" webxml="${basedir}/web.xml">
+			<fileset dir="${workspace.dir}/org.jquery">
+				<include name="**/*.js"/>
+			</fileset>	
+			<fileset dir="${workspace.dir}/org.backbonejs">
+				<include name="**/*.js"/>
+			</fileset>	
+			<fileset dir="${workspace.dir}/org.underscorejs">
+				<include name="**/*.js"/>
+			</fileset>	
+			<fileset dir="${workspace.dir}/org.requirejs">
+				<include name="**/*.js"/>
+			</fileset>	
 			<zipfileset dir="${target.dir}/package" prefix="WEB-INF/classes">
 				<include name="org_dojotoolkit_optimizer.properties"/> 
 				<include name="org_dojotoolkit_compressor.properties"/> 
@@ -46,8 +49,9 @@
 			<zipfileset dir="${workspace.dir}/zazl/optimizer/org.dojotoolkit.optimizer.amd/loader/amd" prefix="loader/amd">
 				<include name="zazl.js"/>
 			</zipfileset>	
-			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample.dojo/amdtest" prefix="amdtest"/>
-			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample.dojo">
+			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample.backbone/js" prefix="js"/>
+			<zipfileset dir="${workspace.dir}/org.zazl.optimizer.sample.backbone/templates" prefix="templates"/>
+			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample.backbone">
 				<include name="*.html"/>
 			</fileset>
 		</war>
