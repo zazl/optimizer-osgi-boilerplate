@@ -12,11 +12,7 @@ var zazlConfig = {
 	}
 };
 
-require([
-'underscore',
-'backbone',
-'app'
-],
-function(_, Backbone, app){
+require(['app'],
+function(app){
 	app.init();
 });
