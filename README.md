@@ -14,18 +14,18 @@ Import all the projects via File->Import->General->Existing Projects into worksp
 
 ## Try the Dojo Sample
 
-Run the the "Zazl Dojo OSGi Sample" launch and point a browser at http://localhost:8080/declarative.html
+Run the "Zazl Dojo OSGi Sample" launch and point a browser at http://localhost:8080/declarative.html
 
 ## Try the Backbone Sample
 
-Run the the "Zazl Backbone OSGi Sample" launch and point a browser at http://localhost:8080/bbsample.html
+Run the "Zazl Backbone OSGi Sample" launch and point a browser at http://localhost:8080/bbsample.html
 
 ## Build the Dojo Sample WAR containing the Optimizer
 
-Select the "/org.zazl.optimizer.sample.dojo/scripts/export.xml" ant script and use right-click->Run As->Ant Build (2nd Ant Build option) to open the Ant Build Dialog. 
+Select the "/org.zazl.optimizer.sample.dojo/scripts/export.xml" Ant script and use right-mouse-click->Run As->Ant Build (2nd Ant Build option) to open the Ant Build Dialog. 
 Click the JRE tab and select "Run in same JRE as workspace"
 
-Run Ant Build on "/org.zazl.optimizer.sample.dojo/scripts/export.xml" via right-click->Run As->Ant Build (1st Ant Build option)
+Run Ant Build on "/org.zazl.optimizer.sample.dojo/scripts/export.xml" via right-mouse-click->Run As->Ant Build (1st Ant Build option)
 Run Ant Build on "/org.zazl.optimizer.sample.dojo/scripts/build.xml"
 
 The result should be "/org.zazl.optimizer.sample.dojo/build/package/dojosample.war"
