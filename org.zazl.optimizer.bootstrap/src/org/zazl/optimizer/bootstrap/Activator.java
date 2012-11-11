@@ -44,6 +44,8 @@ public class Activator implements BundleActivator {
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
+		httpServiceTracker.close();
+		httpServiceTracker = null;
 		this.context = null;
 	}
 	
