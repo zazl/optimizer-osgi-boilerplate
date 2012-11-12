@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Backbone Sample Server
+Bundle-SymbolicName: org.zazl.optimizer.sample.backbone.server
+Bundle-Version: 1.0.0
+Bundle-Activator: org.zazl.optimizer.sample.backbone.server.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: javax.servlet,
+ javax.servlet.http,
+ javax.servlet.resources,
+ org.dojotoolkit.json,
+ org.dojotoolkit.optimizer.servlet,
+ org.dojotoolkit.server.util.osgi,
+ org.dojotoolkit.server.util.resource,
+ org.osgi.framework;version="1.3.0",
+ org.osgi.service.http,
+ org.osgi.util.tracker

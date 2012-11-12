@@ -12,6 +12,7 @@
 <setEntry value="org.requirejs:2.1.0:default:true"/>
 <setEntry value="org.underscorejs:1.4.1:default:true"/>
 <setEntry value="org.zazl.optimizer.bootstrap:1.0.0:default:true"/>
+<setEntry value="org.zazl.optimizer.sample.backbone.server:1.0.0:default:true"/>
 <setEntry value="org.zazl.optimizer.sample.backbone:1.0.0.qualifier:default:true"/>
 </setAttribute>
 <booleanAttribute key="append.args" value="true"/>
