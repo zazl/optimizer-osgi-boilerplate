@@ -10,9 +10,9 @@ function($, Backbone, _, SongList, SongListView){
 			Backbone.history.start();
 		},
 		routes: {
-			'': 'home'
+			'': 'songs'
 		},
-		'home': function() {
+		'songs': function() {
 			var songlist = new SongList();
 			songlist.fetch({
 				success: function(collection, response, options) {
