@@ -6,9 +6,17 @@ var zazlConfig = {
 		//jquery: '../lib/jquery/jquery-1.8.2.min',
 		underscore: '../lib/underscore/underscore',
 		backbone: '../lib/backbone/backbone',
-		//backbone: '../lib/backbone/backbone-min',
 		text: '../lib/requirejs/text',
 		templates: '../templates'
+	},
+	shim: {
+		'backbone' : {
+			deps: ['underscore', 'jquery'],
+			exports: 'Backbone'
+		},
+		'underscore' : {
+			exports: '_'
+		}
 	}
 };
 
