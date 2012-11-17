@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bootstrap
+Bundle-SymbolicName: com.twitter.bootstrap
+Bundle-Version: 2.2.1
+Bundle-Vendor: Twitter
