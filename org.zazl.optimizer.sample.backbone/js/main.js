@@ -6,6 +6,7 @@ var zazlConfig = {
 		//jquery: '../lib/jquery/jquery-1.8.2.min',
 		underscore: '../lib/underscore/underscore',
 		backbone: '../lib/backbone/backbone',
+		bootstrap: "../lib/bootstrap/bootstrap",
 		text: '../lib/requirejs/text',
 		templates: '../templates'
 	},
@@ -16,6 +17,9 @@ var zazlConfig = {
 		},
 		'underscore' : {
 			exports: '_'
+		},
+		'bootstrap' : {
+			deps: ['jquery']
 		}
 	}
 };

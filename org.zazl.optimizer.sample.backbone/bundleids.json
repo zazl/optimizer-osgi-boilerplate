@@ -2,5 +2,6 @@
 	"org.jquery",
 	"org.backbonejs",
 	"org.underscorejs",
-	"org.requirejs"
+	"org.requirejs",
+	"com.twitter.bootstrap"
 ]

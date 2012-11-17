@@ -24,6 +24,8 @@ public class MusicDataServlet extends HttpServlet {
 	private static final String ALBUMS_PATH = "/albums";
 	private static final String ARTISTS_PATH = "/artists";
 	private List<Map<String, Object>> songs = null;
+	private List<Map<String, Object>> albums = null;
+	private List<Map<String, Object>> artists = null;
 	private ResourceLoader resourceLoader = null;
 	
 	public MusicDataServlet(ResourceLoader resourceLoader) {
@@ -41,6 +43,14 @@ public class MusicDataServlet extends HttpServlet {
 			is = resourceLoader.getResource("/data/songs.json").openStream();
 			Reader r = new InputStreamReader(is);
 			songs = (List<Map<String, Object>>)JSONParser.parse(r);
+			is.close();
+			is = resourceLoader.getResource("/data/albums.json").openStream();
+			r = new InputStreamReader(is);
+			albums = (List<Map<String, Object>>)JSONParser.parse(r);
+			is.close();
+			is = resourceLoader.getResource("/data/artists.json").openStream();
+			r = new InputStreamReader(is);
+			artists = (List<Map<String, Object>>)JSONParser.parse(r);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -54,9 +64,11 @@ public class MusicDataServlet extends HttpServlet {
 			resp.setContentType("application/json;charset=UTF-8");
 			JSONSerializer.serialize(resp.getWriter(), songs, true);
 		} else if (path.startsWith(ALBUMS_PATH)) {
-			
+			resp.setContentType("application/json;charset=UTF-8");
+			JSONSerializer.serialize(resp.getWriter(), albums, true);
 		} else if (path.startsWith(ARTISTS_PATH)) {
-			
+			resp.setContentType("application/json;charset=UTF-8");
+			JSONSerializer.serialize(resp.getWriter(), artists, true);
 		}
 	}
 
