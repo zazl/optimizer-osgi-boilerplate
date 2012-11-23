@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.dojotoolkit.compressor.JSCompressorFactory;
-import org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressorFactory;
+import org.dojotoolkit.compressor.closure.ClosureJSCompressorFactory;
 import org.dojotoolkit.json.JSONParser;
 import org.dojotoolkit.optimizer.JSOptimizerFactory;
 import org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizerFactory;
@@ -78,7 +78,7 @@ public class Activator implements BundleActivator {
 			JSCompressorFactory jsCompressorFactory = null;
 			Boolean jscompress = Boolean.valueOf(System.getProperty("zazl.jscompress", "false"));
 			if (jscompress) {
-				jsCompressorFactory = new ShrinksafeJSCompressorFactory();
+				jsCompressorFactory = new ClosureJSCompressorFactory();
 			}
 			JSOptimizerFactory jsOptimizerFactory = new AMDJSOptimizerFactory();
 	
