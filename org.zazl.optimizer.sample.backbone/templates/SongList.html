@@ -1,3 +1,8 @@
 <ul>
-<% _.each(songs, function(song) { %> <li><%= song.title %> <%= song.artist %> <%= song.album %></li> <% }); %>
+<% _.each(songs, function(song) { %> 
+	<li>
+	<%= song.title %> <a href="#artist/<%= encodeURIComponent(song.artist) %>"><%= song.artist %></a> 
+	<a href="#album/<%= encodeURIComponent(song.album) %>"><%= song.album %></a>
+	</li> 
+<% }); %>
 </ul>

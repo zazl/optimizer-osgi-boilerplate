@@ -5,12 +5,12 @@ define([
 		'text!templates/AlbumList.html'], 
 function($, Backbone, _, template){
 	var View = Backbone.View.extend({
-		el: '#main',
+		el: '#container',
 		initialize: function(options) {
 			this.template = _.template( template, { albums: options.albums.toJSON() } );
 		},
 		render: function(){
-			$(this.el).append( this.template );
+			$(this.el).html( this.template );
 		}
 	});
 	
