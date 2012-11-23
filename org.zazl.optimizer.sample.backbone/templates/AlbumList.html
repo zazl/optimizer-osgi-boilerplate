@@ -1,3 +1,5 @@
+<div style="height:800px; overflow:auto;">
 <ul>
-<% _.each(albums, function(album) { %> <li><a href="#songs/<%= encodeURIComponent(album.name) %>"><%= album.name %></a> <a href="#artist/<%= encodeURIComponent(album.artist) %>"><%= album.artist %></a></li> <% }); %>
+<% _.each(albums, function(album) { %> <li><a href="#songs/<%= encodeURIComponent(album.name) %>"><%= album.name %></a> <%= album.artist %></li> <% }); %>
 </ul>
+</div>

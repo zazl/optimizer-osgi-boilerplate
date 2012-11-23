@@ -1,0 +1,20 @@
+<project name="build" basedir=".." default="build">
+	<property
+		name="target.dir"
+		value="${basedir}/build"/>
+	
+	<property
+		name="destination"
+		value="${target.dir}"/>
+	
+	<!-- Export the feature -->
+	<target name="build">
+		<echo level="warning" message="Wait for PDE Plugin Export to finish..."/>
+		<pde.exportPlugins
+			plugins="org.zazl.optimizer.sample.backbone.server"
+			destination="${destination}"
+			exportType="directory" 
+			useJARFormat="false"
+			exportSource="true"/>
+	</target>
+</project>

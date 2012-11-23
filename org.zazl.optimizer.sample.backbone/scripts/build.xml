@@ -12,7 +12,7 @@
 		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizer"/>
 		</propertyfile>		
 		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
-		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressor"/>
+		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
 		</propertyfile>		
 		<war destfile="${target.dir}/package/bbsample.war" webxml="${basedir}/web.xml">
 			<fileset dir="${workspace.dir}/org.jquery">
@@ -27,6 +27,14 @@
 			<fileset dir="${workspace.dir}/org.requirejs">
 				<include name="**/*.js"/>
 			</fileset>	
+			<fileset dir="${workspace.dir}/com.twitter.bootstrap">
+				<include name="**/*.js"/>
+				<include name="**/*.css"/>
+				<include name="**/*.png"/>
+			</fileset>	
+			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample.backbone.server">
+				<include name="data/*.json"/>
+			</fileset>	
 			<zipfileset dir="${target.dir}/package" prefix="WEB-INF/classes">
 				<include name="org_dojotoolkit_optimizer.properties"/> 
 				<include name="org_dojotoolkit_compressor.properties"/> 
@@ -40,7 +48,7 @@
 			<zipfileset dir="${target.dir}/plugins/org.cyberneko.html_1.9.15" prefix="WEB-INF/lib">
 				<include name="*.jar"/> 
 			</zipfileset>	
-			<zipfileset dir="${target.dir}/plugins/org.dojotoolkit.shrinksafe_1.0.1" prefix="WEB-INF/lib">
+			<zipfileset dir="${target.dir}/plugins/com.google.javascript_2.1.8.0" prefix="WEB-INF/lib">
 				<include name="*.jar"/> 
 			</zipfileset>	
 			<zipfileset dir="${target.dir}/plugins/org.mozilla.javascript_1.7.3" prefix="WEB-INF/lib">

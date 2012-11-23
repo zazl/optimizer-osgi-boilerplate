@@ -53,6 +53,7 @@ function($, Backbone, _, SongList, SongListView, ArtistList, ArtistListView, Alb
 			'songs': 'songs',
 			'albums': 'albums',
 			'artists': 'artists',
+			'artists/': 'artists',
 			'': 'artists'
 		}
 	});

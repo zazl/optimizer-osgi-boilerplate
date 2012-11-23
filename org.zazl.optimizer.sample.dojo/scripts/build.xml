@@ -15,7 +15,7 @@
 		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizer"/>
 		</propertyfile>		
 		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
-		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.shrinksafe.ShrinksafeJSCompressor"/>
+		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
 		  <entry  key="ignoreList" value="/dojo/dojo.js,.*/nls/.*"/>
 		</propertyfile>		
 		<war destfile="${target.dir}/package/dojosample.war" webxml="${basedir}/web.xml">

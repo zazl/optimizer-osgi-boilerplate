@@ -2,7 +2,7 @@
 <web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<context-param>
 	    <param-name>compressJS</param-name>
-	    <param-value>false</param-value>
+	    <param-value>true</param-value>
 	</context-param>
 	<context-param>
 	    <param-name>jsHandlerType</param-name>
@@ -15,8 +15,19 @@
         <servlet-class>org.dojotoolkit.optimizer.servlet.JSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <description/>
+        <display-name>MusicDataServlet</display-name>
+        <servlet-name>MusicDataServlet</servlet-name>
+        <servlet-class>org.zazl.optimizer.sample.backbone.server.MusicDataServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
     <servlet-mapping>
         <servlet-name>JSServlet</servlet-name>
         <url-pattern>/_javascript/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MusicDataServlet</servlet-name>
+        <url-pattern>/music/*</url-pattern>
     </servlet-mapping>
 </web-app>

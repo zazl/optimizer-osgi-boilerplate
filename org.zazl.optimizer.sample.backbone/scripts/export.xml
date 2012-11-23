@@ -15,7 +15,7 @@
 	<!-- Export the feature -->
 	<target name="build">
 		<antcall target="clean"/>
-		<echo level="warning" message="Wait for background PDE Export to finish..."/>
+		<echo level="warning" message="Wait for PDE Feature Export to finish..."/>
 		<pde.exportFeatures
 			features="${features}"
 			destination="${destination}"
