@@ -11,6 +11,7 @@ function($, Backbone, _, template){
 		},
 		render: function(){
 			$(this.el).html( this.template );
+			$('#musicartists').tableScroll({width: 600, height: 500});
 		}
 	});
 	

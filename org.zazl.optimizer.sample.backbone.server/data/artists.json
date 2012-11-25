@@ -1,8 +1,143 @@
 [
-	{
-		"name": "Dire Straits" 
-	},
-	{
-		"name": "New Order" 
-	}
+  {
+    "name": "AC-DC"
+  },
+  {
+    "name": "Alt-J"
+  },
+  {
+    "name": "Bat For Lashes"
+  },
+  {
+    "name": "Black Grape"
+  },
+  {
+    "name": "Blink-182"
+  },
+  {
+    "name": "Bloc Party"
+  },
+  {
+    "name": "Chemical Brothers"
+  },
+  {
+    "name": "Clash"
+  },
+  {
+    "name": "Crystal Method"
+  },
+  {
+    "name": "David Bowie"
+  },
+  {
+    "name": "Death in Vegas"
+  },
+  {
+    "name": "Doves"
+  },
+  {
+    "name": "Echo And The Bunnymen"
+  },
+  {
+    "name": "Elbow"
+  },
+  {
+    "name": "Feeder"
+  },
+  {
+    "name": "Interpol"
+  },
+  {
+    "name": "Jack White"
+  },
+  {
+    "name": "Jeff Buckley"
+  },
+  {
+    "name": "Joy Division"
+  },
+  {
+    "name": "Kings Of Leon"
+  },
+  {
+    "name": "LCD Soundsystem"
+  },
+  {
+    "name": "Modest Mouse"
+  },
+  {
+    "name": "Muse"
+  },
+  {
+    "name": "Nick Drake"
+  },
+  {
+    "name": "Pixies"
+  },
+  {
+    "name": "Police"
+  },
+  {
+    "name": "Prodigy"
+  },
+  {
+    "name": "Queens of The Stone Age"
+  },
+  {
+    "name": "Radiohead"
+  },
+  {
+    "name": "Red Hot Chili Peppers"
+  },
+  {
+    "name": "Smashing Pumpkins"
+  },
+  {
+    "name": "Stone Temple Pilots"
+  },
+  {
+    "name": "Talking Heads"
+  },
+  {
+    "name": "The Black Keys"
+  },
+  {
+    "name": "The Cure"
+  },
+  {
+    "name": "The Raconteurs"
+  },
+  {
+    "name": "The Smiths"
+  },
+  {
+    "name": "The Stone Roses"
+  },
+  {
+    "name": "The Strokes"
+  },
+  {
+    "name": "The The"
+  },
+  {
+    "name": "The White Stripes"
+  },
+  {
+    "name": "The Who"
+  },
+  {
+    "name": "U2"
+  },
+  {
+    "name": "Underworld"
+  },
+  {
+    "name": "Van Halen"
+  },
+  {
+    "name": "Yeah Yeah Yeahs"
+  },
+  {
+    "name": "Young The Giant"
+  }
 ]

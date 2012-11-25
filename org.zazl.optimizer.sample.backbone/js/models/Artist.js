@@ -1,7 +1,9 @@
 define(['backbone'], function(Backbone) {
 	var Artist = Backbone.Model.extend({
 		defaults: {
-			name: null
+			name: null,
+			albumCount: 0,
+			songCount: 0
 		}
 	});
 	

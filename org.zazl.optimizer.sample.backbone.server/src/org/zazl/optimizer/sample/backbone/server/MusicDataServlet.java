@@ -77,6 +77,26 @@ public class MusicDataServlet extends HttpServlet {
 				}
 				l.add(song);
 			}
+
+			for (Map<String, Object> artist : artists) {
+				String name = (String)artist.get("name");
+				int albumCount = 0;
+				for (Map<String, Object> album : albums) {
+					String artistName = (String)album.get("artist");
+					if (artistName.equals(name)) {
+						albumCount++;
+					}
+				}
+				artist.put("albumCount", albumCount);
+				int songCount = 0;
+				for (Map<String, Object> song : songs) {
+					String artistName = (String)song.get("artist");
+					if (artistName.equals(name)) {
+						songCount++;
+					}
+				}
+				artist.put("songCount", songCount);
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {

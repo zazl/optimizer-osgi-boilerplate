@@ -9,6 +9,7 @@
 <setEntry value="org.eclipse.equinox.console:1.0.0.v20120522-1841:default:true"/>
 <setEntry value="org.eclipse.equinox.http.jetty:3.0.0.v20120522-1841:default:true"/>
 <setEntry value="org.eclipse.equinox.http.servlet:1.1.300.v20120522-1841:default:true"/>
+<setEntry value="org.jquery.tablescroll:1.0.0:default:true"/>
 <setEntry value="org.jquery:1.8.2:default:true"/>
 <setEntry value="org.requirejs:2.1.0:default:true"/>
 <setEntry value="org.underscorejs:1.4.1:default:true"/>

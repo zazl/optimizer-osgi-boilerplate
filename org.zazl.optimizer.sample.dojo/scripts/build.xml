@@ -15,7 +15,7 @@
 		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizer"/>
 		</propertyfile>		
 		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
-		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
+		  <entry  key="jsCompressorClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
 		  <entry  key="ignoreList" value="/dojo/dojo.js,.*/nls/.*"/>
 		</propertyfile>		
 		<war destfile="${target.dir}/package/dojosample.war" webxml="${basedir}/web.xml">
@@ -37,7 +37,7 @@
 			<zipfileset dir="${target.dir}/plugins/org.cyberneko.html_1.9.15" prefix="WEB-INF/lib">
 				<include name="*.jar"/> 
 			</zipfileset>	
-			<zipfileset dir="${target.dir}/plugins/org.dojotoolkit.shrinksafe_1.0.1" prefix="WEB-INF/lib">
+			<zipfileset dir="${target.dir}/plugins/com.google.javascript_2.1.8.0" prefix="WEB-INF/lib">
 				<include name="*.jar"/> 
 			</zipfileset>	
 			<zipfileset dir="${target.dir}/plugins/org.mozilla.javascript_1.7.3" prefix="WEB-INF/lib">

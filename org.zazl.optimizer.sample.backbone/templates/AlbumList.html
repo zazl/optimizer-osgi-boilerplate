@@ -1,5 +1,17 @@
-<div style="height:800px; overflow:auto;">
-<ul>
-<% _.each(albums, function(album) { %> <li><a href="#songs/<%= encodeURIComponent(album.name) %>"><%= album.name %></a> <%= album.artist %></li> <% }); %>
-</ul>
+<div>
+	<table id="musicalbums">
+		<thead>
+			<tr>
+				<th>Album</th>
+				<th>Artist</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% _.each(albums, function(album) { %> 
+			<tr>
+				<td><a href="#songs/<%= encodeURIComponent(album.name) %>"><%= album.name %></a></td><td><%= album.artist %></td> 
+			</tr>
+		<% }); %>
+		</tbody>
+	</table>
 </div>

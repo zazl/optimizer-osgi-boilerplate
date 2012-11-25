@@ -3,5 +3,6 @@
 	"org.backbonejs",
 	"org.underscorejs",
 	"org.requirejs",
-	"com.twitter.bootstrap"
+	"com.twitter.bootstrap",
+	"org.jquery.tablescroll"
 ]

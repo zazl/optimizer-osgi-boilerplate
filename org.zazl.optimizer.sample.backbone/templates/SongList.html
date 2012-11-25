@@ -1,20 +1,20 @@
-<div style="height:800px; overflow:auto;">
-<table>
-<thead>
-<tr>
-<th>Track</th>
-<th>Tile</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<% _.each(songs, function(song) { %> 
-	<tr>
-	<td><%= song.track %></td> 
-	<td><%= song.title %></td>
-	<td><%= Math.floor(song.duration / 60) %>:<%= song.duration - Math.floor(song.duration / 60) * 60 %></td> 
-	</tr> 
-<% }); %>
-</tbody>
-</table>
+<div>
+	<table id="musicsongs">
+		<thead>
+			<tr>
+				<th>Track</th>
+				<th>Tile</th>
+				<th>Duration</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% _.each(songs, function(song) { %> 
+			<tr>
+				<td><%= song.track %></td> 
+				<td><%= song.title %></td>
+				<td><%= Math.floor(song.duration / 60) %>:<%= song.duration - Math.floor(song.duration / 60) * 60 %></td> 
+			</tr> 
+		<% }); %>
+		</tbody>
+	</table>
 </div>

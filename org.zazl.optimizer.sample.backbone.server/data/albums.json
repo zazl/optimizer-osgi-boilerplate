@@ -1,10 +1,802 @@
 [
-	{
-		"name": "Brothers In Arms",
-		"artist": "Dire Straits"
-	},
-	{
-		"name": "Power, Corruption & Lies",
-		"artist": "New Order"
-	}
+  {
+    "artist": "AC-DC",
+    "name": "Back in Black"
+  },
+  {
+    "artist": "AC-DC",
+    "name": "Dirty Deeds Done Dirt Cheap"
+  },
+  {
+    "artist": "AC-DC",
+    "name": "High Voltage"
+  },
+  {
+    "artist": "AC-DC",
+    "name": "Highway To Hell"
+  },
+  {
+    "artist": "AC-DC",
+    "name": "Let There Be Rock"
+  },
+  {
+    "artist": "Alt-J",
+    "name": "An Awesome Wave"
+  },
+  {
+    "artist": "Bat For Lashes",
+    "name": "The Haunted Man"
+  },
+  {
+    "artist": "Bat For Lashes",
+    "name": "Two Suns"
+  },
+  {
+    "artist": "Black Grape",
+    "name": "It's Great When You're Straight...Yeah"
+  },
+  {
+    "artist": "Black Grape",
+    "name": "Stupid Stupid Stupid"
+  },
+  {
+    "artist": "Blink-182",
+    "name": "Blink-182"
+  },
+  {
+    "artist": "Blink-182",
+    "name": "Enema Of The State"
+  },
+  {
+    "artist": "Blink-182",
+    "name": "Neighborhoods"
+  },
+  {
+    "artist": "Blink-182",
+    "name": "Take Off Your Pants And Jacket"
+  },
+  {
+    "artist": "Bloc Party",
+    "name": "Four"
+  },
+  {
+    "artist": "Bloc Party",
+    "name": "Silent Alarm"
+  },
+  {
+    "artist": "Chemical Brothers",
+    "name": "Dig Your Own Hole"
+  },
+  {
+    "artist": "Chemical Brothers",
+    "name": "Exit Planet Dust"
+  },
+  {
+    "artist": "Chemical Brothers",
+    "name": "Further"
+  },
+  {
+    "artist": "Chemical Brothers",
+    "name": "Come With Us"
+  },
+  {
+    "artist": "Chemical Brothers",
+    "name": "Surrender"
+  },
+  {
+    "artist": "Clash",
+    "name": "Combat Rock"
+  },
+  {
+    "artist": "Clash",
+    "name": "London calling"
+  },
+  {
+    "artist": "Clash",
+    "name": "Sandinista! [CD1]"
+  },
+  {
+    "artist": "Clash",
+    "name": "Sandinista! [CD2]"
+  },
+  {
+    "artist": "Crystal Method",
+    "name": "Tweekend"
+  },
+  {
+    "artist": "Crystal Method",
+    "name": "Legion of Boom"
+  },
+  {
+    "artist": "David Bowie",
+    "name": "Changes"
+  },
+  {
+    "artist": "David Bowie",
+    "name": "Let's Dance"
+  },
+  {
+    "artist": "David Bowie",
+    "name": "Low"
+  },
+  {
+    "artist": "David Bowie",
+    "name": "Scary Monsters"
+  },
+  {
+    "artist": "Death in Vegas",
+    "name": "The Contino Sessions"
+  },
+  {
+    "artist": "Doves",
+    "name": "Some Cities"
+  },
+  {
+    "artist": "Doves",
+    "name": "The Last Broadcast"
+  },
+  {
+    "artist": "Doves",
+    "name": "The Last Broadcast (bonus disc)"
+  },
+  {
+    "artist": "Echo And The Bunnymen",
+    "name": "Crocodiles"
+  },
+  {
+    "artist": "Echo And The Bunnymen",
+    "name": "Echo And The Bunnymen (2003 Remaster)"
+  },
+  {
+    "artist": "Echo And The Bunnymen",
+    "name": "Ocean Rain"
+  },
+  {
+    "artist": "Echo And The Bunnymen",
+    "name": "Porcupine"
+  },
+  {
+    "artist": "Elbow",
+    "name": "The Seldom Seen Kid"
+  },
+  {
+    "artist": "Feeder",
+    "name": "Comfort In Sound"
+  },
+  {
+    "artist": "Feeder",
+    "name": "Pushing The Senses"
+  },
+  {
+    "artist": "Feeder",
+    "name": "Pushing The Senses"
+  },
+  {
+    "artist": "Interpol",
+    "name": "Antics"
+  },
+  {
+    "artist": "Interpol",
+    "name": "Interpol"
+  },
+  {
+    "artist": "Interpol",
+    "name": "Our Love to Admire"
+  },
+  {
+    "artist": "Interpol",
+    "name": "Turn on the Bright Lights"
+  },
+  {
+    "artist": "Jack White",
+    "name": "Blunderbuss"
+  },
+  {
+    "artist": "Jeff Buckley",
+    "name": "Grace"
+  },
+  {
+    "artist": "Jeff Buckley",
+    "name": "Sketches for My Sweetheart the Drunk"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Heart and Soul (Disc 1)"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Heart And Soul (Disc 2)"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Heart and Soul (Disc 3)"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Heart And Soul (Disc 4)"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "A Factory Sample"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "An Ideal For Living"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Atmosphere (1988)"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Komakino"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Love Will Tear Us Apart"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "She's Lost Control"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Sordide Sentimental"
+  },
+  {
+    "artist": "Joy Division",
+    "name": "Transmission"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Aha Shake Heartbreak"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Because Of The Times"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Come Around Sundown"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Come Around Sundown CD2"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Only By The Night"
+  },
+  {
+    "artist": "Kings Of Leon",
+    "name": "Youth & Young Manhood"
+  },
+  {
+    "artist": "LCD Soundsystem",
+    "name": "45:33 remixes"
+  },
+  {
+    "artist": "LCD Soundsystem",
+    "name": "Sound Of Silver"
+  },
+  {
+    "artist": "LCD Soundsystem",
+    "name": "This Is Happening"
+  },
+  {
+    "artist": "Modest Mouse",
+    "name": "The Moon & Antarctica"
+  },
+  {
+    "artist": "Modest Mouse",
+    "name": "We Were Dead Before The Ship Even Sank"
+  },
+  {
+    "artist": "Muse",
+    "name": "Absolution"
+  },
+  {
+    "artist": "Muse",
+    "name": "Black Holes And Revelations"
+  },
+  {
+    "artist": "Muse",
+    "name": "Origin Of Symmetry"
+  },
+  {
+    "artist": "Muse",
+    "name": "The Resistance"
+  },
+  {
+    "artist": "Muse",
+    "name": "The 2nd Law"
+  },
+  {
+    "artist": "Nick Drake",
+    "name": "Five Leaves Left"
+  },
+  {
+    "artist": "Nick Drake",
+    "name": "Pink Moon"
+  },
+  {
+    "artist": "Nick Drake",
+    "name": "Bryter Layter"
+  },
+  {
+    "artist": "Pixies",
+    "name": "Best of Pixies: Wave of Mutilation"
+  },
+  {
+    "artist": "Pixies",
+    "name": "Doolittle"
+  },
+  {
+    "artist": "Pixies",
+    "name": "Surfer Rosa"
+  },
+  {
+    "artist": "Pixies",
+    "name": "Trompe Le Monde"
+  },
+  {
+    "artist": "Police",
+    "name": "Every Breath You Take - The Singles"
+  },
+  {
+    "artist": "Police",
+    "name": "Ghost in Machine"
+  },
+  {
+    "artist": "Police",
+    "name": "Outlandos d'Amour"
+  },
+  {
+    "artist": "Police",
+    "name": "Reggatta de Blanc"
+  },
+  {
+    "artist": "Police",
+    "name": "Synchronicity"
+  },
+  {
+    "artist": "Police",
+    "name": "Zenyatta Mondatta"
+  },
+  {
+    "artist": "Prodigy",
+    "name": "Always Outnumbered, Never Outgunned"
+  },
+  {
+    "artist": "Prodigy",
+    "name": "Music for the Jilted Generation"
+  },
+  {
+    "artist": "Prodigy",
+    "name": "The Fat of the Land"
+  },
+  {
+    "artist": "Queens of The Stone Age",
+    "name": "Era Vulgaris"
+  },
+  {
+    "artist": "Queens of The Stone Age",
+    "name": "Lullabies To Paralyze"
+  },
+  {
+    "artist": "Queens of The Stone Age",
+    "name": "Queens Of The Stone Age"
+  },
+  {
+    "artist": "Queens of The Stone Age",
+    "name": "Rated R"
+  },
+  {
+    "artist": "Queens of The Stone Age",
+    "name": "Songs for the Deaf"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "Amnesiac"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "Hail to the Thief"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "In Rainbows"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "Kid A"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "OK Computer"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "Pablo Honey"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "The Bends"
+  },
+  {
+    "artist": "Radiohead",
+    "name": "The King of Limbs"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Blood Sugar Sex Magik"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "By The Way"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Californication"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Freaky Styley"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "I'm With You"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Mother's Milk"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "One Hot Minute"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Stadium Arcadium (Jupiter)"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "Stadium Arcadium (Mars)"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "name": "The Uplift Mofo Party Plan"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "name": "Mellon Collie and the Infinite Sadness - Dawn to Dusk"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "name": "Mellon Collie and the Infinite Sadness - Twilight to Starlight"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "name": "Siamese Dream"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "name": "Adora"
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "name": "Core"
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "name": "No. 4"
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "name": "Purple"
+  },
+  {
+    "artist": "Talking Heads",
+    "name": "Remain in Light"
+  },
+  {
+    "artist": "Talking Heads",
+    "name": "Speaking In Tongues"
+  },
+  {
+    "artist": "The Black Keys",
+    "name": "Brothers"
+  },
+  {
+    "artist": "The Black Keys",
+    "name": "El Camino"
+  },
+  {
+    "artist": "The Cure",
+    "name": "4:13 dream"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Boys Don't Cry"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Disintegration"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Faith (Cure)"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Japanese Whispers"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Kiss Me Kiss Me Kiss Me"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Pornography"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Seventeen Seconds"
+  },
+  {
+    "artist": "The Cure",
+    "name": "The Cure"
+  },
+  {
+    "artist": "The Cure",
+    "name": "The Head On The Door"
+  },
+  {
+    "artist": "The Cure",
+    "name": "The Top"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Three Imaginary Boys"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Wild Mood Swings"
+  },
+  {
+    "artist": "The Cure",
+    "name": "Wish"
+  },
+  {
+    "artist": "The Raconteurs",
+    "name": "Broken Boy Soldiers"
+  },
+  {
+    "artist": "The Smiths",
+    "name": "Hatful Of Hollow"
+  },
+  {
+    "artist": "The Smiths",
+    "name": "Singles"
+  },
+  {
+    "artist": "The Smiths",
+    "name": "The Queen Is Dead"
+  },
+  {
+    "artist": "The Stone Roses",
+    "name": "Second Coming"
+  },
+  {
+    "artist": "The Stone Roses",
+    "name": "The Stone Roses"
+  },
+  {
+    "artist": "The Strokes",
+    "name": "Angles"
+  },
+  {
+    "artist": "The Strokes",
+    "name": "First Impressions Of Earth"
+  },
+  {
+    "artist": "The Strokes",
+    "name": "Is This It?"
+  },
+  {
+    "artist": "The Strokes",
+    "name": "Room On Fire"
+  },
+  {
+    "artist": "The The",
+    "name": "45 RPM - The 12' Mixes CD2"
+  },
+  {
+    "artist": "The The",
+    "name": "45 RPM CD1"
+  },
+  {
+    "artist": "The The",
+    "name": "Dusk"
+  },
+  {
+    "artist": "The The",
+    "name": "Infected"
+  },
+  {
+    "artist": "The The",
+    "name": "Naked Self"
+  },
+  {
+    "artist": "The The",
+    "name": "Soul mining"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "De Stijl"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "Elephant"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "Get Behind Me Satan"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "Icky Thump"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "The White Stripes"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "Under Great White Northern Lights"
+  },
+  {
+    "artist": "The White Stripes",
+    "name": "White Blood Cells"
+  },
+  {
+    "artist": "The Who",
+    "name": "The Ultimate Collection  ( CD-1 )"
+  },
+  {
+    "artist": "The Who",
+    "name": "The Ultimate Collection (CD 2)"
+  },
+  {
+    "artist": "U2",
+    "name": "Achtung Baby"
+  },
+  {
+    "artist": "U2",
+    "name": "All That You Can't Leave Behind"
+  },
+  {
+    "artist": "U2",
+    "name": "Boy"
+  },
+  {
+    "artist": "U2",
+    "name": "How to Dismantle an Atomic Bomb"
+  },
+  {
+    "artist": "U2",
+    "name": "No Line On The Horizon"
+  },
+  {
+    "artist": "U2",
+    "name": "October"
+  },
+  {
+    "artist": "U2",
+    "name": "Pop"
+  },
+  {
+    "artist": "U2",
+    "name": "The Joshua Tree"
+  },
+  {
+    "artist": "U2",
+    "name": "The Unforgettable Fire"
+  },
+  {
+    "artist": "U2",
+    "name": "War"
+  },
+  {
+    "artist": "U2",
+    "name": "Zooropa"
+  },
+  {
+    "artist": "Underworld",
+    "name": "1992 - 2002 (Disc 1)"
+  },
+  {
+    "artist": "Underworld",
+    "name": "1992-2002 (Disc 2)"
+  },
+  {
+    "artist": "Underworld",
+    "name": "A Hundred Days Off"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Barking"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Beaucoup Fish"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Dubnobasswithmyheadman"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Everything, Everything"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Oblivion With Bells"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Second Toughest In The Infants"
+  },
+  {
+    "artist": "Underworld",
+    "name": "Barking"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "1984"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "Diver Down"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "Fair Warning"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "Van Halen"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "Van Halen II"
+  },
+  {
+    "artist": "Van Halen",
+    "name": "Women And Children First"
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "name": "Fever To Tell"
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "name": "It's Blitz!"
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "name": "Show Your Bones"
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "name": "It's Blitz!"
+  },
+  {
+    "artist": "Yeah Yeah Yeahs",
+    "name": "Show Your Bones"
+  },
+  {
+    "artist": "Young The Giant",
+    "name": "Young The Giant"
+  }
 ]

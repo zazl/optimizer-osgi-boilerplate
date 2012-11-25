@@ -9,8 +9,9 @@ function($, Backbone, _, template){
 		initialize: function(options) {
 			this.template = _.template( template, { albums: options.albums.toJSON() } );
 		},
-		render: function(){
+		render: function() {
 			$(this.el).html( this.template );
+			$('#musicalbums').tableScroll({width: 600, height: 500});
 		}
 	});
 	

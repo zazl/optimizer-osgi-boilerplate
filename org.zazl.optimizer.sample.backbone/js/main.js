@@ -3,10 +3,10 @@ var zazlConfig = {
 	directInject: true,
 	paths: {
 		jquery: '../lib/jquery/jquery-1.8.2',
-		//jquery: '../lib/jquery/jquery-1.8.2.min',
 		underscore: '../lib/underscore/underscore',
 		backbone: '../lib/backbone/backbone',
 		bootstrap: "../lib/bootstrap/bootstrap",
+		tablescroll: "../lib/tablescroll/jquery.tablescroll",
 		text: '../lib/requirejs/text',
 		templates: '../templates'
 	},
@@ -19,6 +19,9 @@ var zazlConfig = {
 			exports: '_'
 		},
 		'bootstrap' : {
+			deps: ['jquery']
+		},
+		'tablescroll' : {
 			deps: ['jquery']
 		}
 	}

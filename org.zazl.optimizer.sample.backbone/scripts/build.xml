@@ -12,7 +12,7 @@
 		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.optimizer.amd.rhinoast.AMDJSOptimizer"/>
 		</propertyfile>		
 		<propertyfile file="${target.dir}/package/org_dojotoolkit_compressor.properties">
-		  <entry  key="jsOptimizerClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
+		  <entry  key="jsCompressorClassName" value="org.dojotoolkit.compressor.closure.ClosureJSCompressor"/>
 		</propertyfile>		
 		<war destfile="${target.dir}/package/bbsample.war" webxml="${basedir}/web.xml">
 			<fileset dir="${workspace.dir}/org.jquery">
@@ -31,6 +31,10 @@
 				<include name="**/*.js"/>
 				<include name="**/*.css"/>
 				<include name="**/*.png"/>
+			</fileset>	
+			<fileset dir="${workspace.dir}/org.jquery.tablescroll">
+				<include name="**/*.js"/>
+				<include name="**/*.css"/>
 			</fileset>	
 			<fileset dir="${workspace.dir}/org.zazl.optimizer.sample.backbone.server">
 				<include name="data/*.json"/>
