@@ -23,9 +23,13 @@ Run the "Zazl Dojo OSGi Sample" launch and point a browser at http://localhost:8
 The backbone sample is a Music Collection webpage loading its data from JSON files. It demonstrates the Zazl Optimizer loading 
 
 [jquery](http://jquery.org)
+
 [backbone](http://backbonejs.org) 
+
 [underscore](http://underscorejs.org) 
+
 [bootstrap](http://twitter.github.com/bootstrap) 
+
 [jquery.tablescroll](http://www.farinspace.com/jquery-scrollable-table-plugin)
 
 
@@ -37,6 +41,7 @@ Select the "/org.zazl.optimizer.sample.dojo/scripts/export.xml" Ant script and u
 Click the JRE tab and select "Run in same JRE as workspace"
 
 Run Ant Build on "/org.zazl.optimizer.sample.dojo/scripts/export.xml" via right-mouse-click->Run As->Ant Build (1st Ant Build option)
+
 Run Ant Build on "/org.zazl.optimizer.sample.dojo/scripts/build.xml"
 
 The result should be "/org.zazl.optimizer.sample.dojo/build/package/dojosample.war"
@@ -52,7 +57,9 @@ Select the "/org.zazl.optimizer.sample.backbone/scripts/exportserver.xml" Ant sc
 Click the JRE tab and select "Run in same JRE as workspace"
 
 Run Ant Build on "/org.zazl.optimizer.sample.backbone/scripts/export.xml" via right-mouse-click->Run As->Ant Build (1st Ant Build option)
+
 Run Ant Build on "/org.zazl.optimizer.sample.backbone/scripts/exportserver.xml" via right-mouse-click->Run As->Ant Build (1st Ant Build option)
+
 Run Ant Build on "/org.zazl.optimizer.sample.backbone/scripts/build.xml"
 
 
