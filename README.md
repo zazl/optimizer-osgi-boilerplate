@@ -33,7 +33,7 @@ The backbone sample is a Music Collection webpage loading its data from JSON fil
 [jquery.tablescroll](http://www.farinspace.com/jquery-scrollable-table-plugin)
 
 
-Run the "Zazl Backbone OSGi Sample" launch and point a browser at http://localhost:8080/bbsample.html
+Run the "Zazl Backbone OSGi Sample" launch and point a browser at http://localhost:8080/music.html
 
 ## Build the Dojo Sample WAR containing the Optimizer
 

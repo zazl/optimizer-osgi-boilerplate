@@ -82,7 +82,7 @@ public class Activator implements BundleActivator {
 			}
 			JSOptimizerFactory jsOptimizerFactory = new AMDJSOptimizerFactory();
 	
-			JSServlet jsServlet = new JSServlet(resourceLoader, jsOptimizerFactory, rhinoClassLoader, "zazl", null, null, jsCompressorFactory);
+			JSServlet jsServlet = new JSServlet(resourceLoader, jsOptimizerFactory, rhinoClassLoader, "zazl", null, null, jsCompressorFactory, true);
 			ResourceServlet resourceServlet = new ResourceServlet(resourceLoader);
 			try {
 				System.out.println("Registering Zazl JavaScript servlet");
